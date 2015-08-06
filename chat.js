@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-///**
+//**
 // * Created by imad on 7/31/2015.
 // */
 //
@@ -87,7 +86,6 @@ angular.module("app", ["chart.js"])
         //    ];
         //}, 3000);
     }]);
-=======
 /**
  * Created by imad on 7/31/2015.
  */
@@ -123,4 +121,3 @@ myapp.controller("myctr",function($scope){
     };
 
 })
->>>>>>> origin/master
