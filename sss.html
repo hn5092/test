@@ -16,7 +16,10 @@
 <!--<input type="button" ng-click="send()" name="xym">-->
 <!--<canvas id="line" class="chart chart-line" data="data" labels="labels"-->
         <!--legend="true" series="series" click="onClick"></canvas>-->
-<canvas style="width: 600px" id="bar" class="chart chart-bar" data="data"
-        labels="labels"></canvas>
+<div><canvas style="width: 600px; height:300px" id="cpuBar" class="chart chart-bar" data="cpuData"series="cpuSeries"
+        labels="labels"></canvas></div>
+<div><canvas style="width: 600px ; height:300px" id="bar2" class="chart chart-bar" data="memData" series="memSeries"
+        labels="labels"></canvas></div>
+
 </body>
 </html>
