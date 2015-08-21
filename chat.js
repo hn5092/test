@@ -28,21 +28,21 @@ angular.module("app", ["chart.js"])
             datasetFill: false
         });
     }]).controller("LineCtrl", ['$scope', '$timeout', function ($scope, $timeout) {
-        $scope.labels = ['xmy1', 'xym2', 'xym3', 'xym4', 'xym5', 'xym6'];
+        $scope.labels = ['xmy1', 'xym2', 'xym3', 'xym4', 'xym5', 'xym6','xym7','xym8','xym9','xym10'];
         $scope.cpuSeries = ['us','sy', 'id','wa' ];
         $scope.memSeries = ['total','used','free','buffers'];
         $scope.cpuData = [
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0]
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 
         ];
         $scope.memData = [
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0]
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         ];
         var ws = new WebSocket("ws://localhost:99");
         $scope.send = function(){
